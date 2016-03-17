@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html>
+   <head>
+       <title>My list</title>
+       <script src="../../scripts/tripody.js"></script>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+       <meta name="description" content="">
+       <meta name="viewport" content="width=device-width">
+       <meta name="user-token" content="<%= @token %>">
+   </head>
+   <body>
+     <h3>My list</h3>
+     <a id="back-link" href="#">Back to results</a>
+     <table class="table table-striped">
+       <tr>
+         <th>Name</th>
+         <th>Description</th>
+         <th>Image</th>
+         <th></th>
+         <th></th>
+       </tr>
+       <% @result_array.each do |elem| %>
+             <tr>
+               <td><%= elem.p_name %></td>
+               <td><%= elem.p_description %></td>
+               <td>
+                 <img src="<%= elem.p_imageurl %>" alt="image" />
+               </td>
+               <td>
+                 <form action="/detail/<%= elem.p_id %>" method="get">
+                   <input name="item" type="submit" class="btn btn-default" value="Details anzeigen">
+                 </form>
+               </td>
+			         <td>
+				         <button  class="toggle-poi remove btn btn-default" value="<%= elem.p_id %>"><%= elem.p_marked %></button>
+               </td>
+             </tr>
+       <% end %>
+     </table>
+   </body>
+</html>

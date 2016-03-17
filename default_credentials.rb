@@ -1,0 +1,6 @@
+CONSUMER_KEY = ""
+SECRET = ""
+TOKEN = ""
+TOKEN_SECRET = ""
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html >
+<html>
+   <head>
+       <title>Searchresults</title>
+       <script src="../../scripts/tripody.js"></script>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+       <meta name="description" content="">
+       <meta name="viewport" content="width=device-width">
+   </head>
+   <body>
+     <h3>Results for: <%= @searchInput %></h3>
+     <a id="my-list-ref" href="/list/"> My list </a>
+     <table class="table table-striped">
+       <tr>
+         <th>Name</th>
+         <th>Description</th>
+         <th>Image</th>
+         <th></th>
+         <th></th>
+       </tr>
+       <% @result_array.each do |elem| %>
+             <tr>
+               <td><%= elem.p_name %></td>
+               <td><%= elem.p_description %></td>
+               <td>
+				         <img src="<%= elem.p_imageurl %>" alt="image" />
+               </td>
+               <td>
+                 <form action="/detail/<%= elem.p_id %>" method="get">
+				           <button type="submit" class="btn btn-default" value="Show details">
+                     Show details
+                   </button>
+                 </form>
+               </td>
+               <td>
+				          <button class="toggle-poi add btn btn-default" value="<%= elem.p_id %>"><%= elem.p_marked %></button>
+               </td>
+             </tr>
+       <% end %>
+     </table>
+     <a href='/'>Back</a>
+   </body>
+</html>

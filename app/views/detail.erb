@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+<html>
+   <head>
+       <title>Details</title>
+       <script src="../../scripts/tripody.js"></script>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+       <meta name="description" content="">
+       <meta name="viewport" content="width=device-width">
+       <meta name="user-token" content="<%= @token %>">
+   </head>
+   <body>
+     <h3>Details for:<%=@poi.p_id%></h3>
+     <a id="back-link" href="#">Back to results</a>
+     <table class="table table-striped">
+       <tr>
+         <th>Name</th>
+         <th>Description</th>
+         <th>Image</th>
+         <th></th>
+         <th></th>
+       </tr>
+       <tr>
+         <td><%= @poi.p_name %></td>
+         <td><%= @poi.p_description %></td>
+         <td><img src="<%= @poi.p_imageurl %>" alt="image" /></td>
+       </tr>
+     </table>
+   </body>
+</html>
