@@ -10,11 +10,14 @@ The data is taken from the Yelp API, as a storage technology Redis has been chos
 
 In order to run the application you need to:  
 1. Clone the repository  
-2. Install rack  
-3. Install redis  
-4. Start redis on port 6767  
-5. Rename default_credentials.rb to credentials.rb   
-6. Provide Yelp API access information in credentials.rb  
+2. Rename default_credentials.rb to credentials.rb   
+3. Provide Yelp API access information in credentials.rb  
+4. Install redis. Open a command shell, navigate into redis root directory and execute "redis-server.exe redis.windows.conf"
+5. Open a command shell, navigate into project root directory and execute following commands
+- *bundle install* to install specified gems from Gemfile
+- *bundle update* to update all gems to the latest versions available
+- *rackup* to start HTTP server WEBrick
+6. Open *localhost:9292* in a browser
 
 The project has been created in order to demonstrate the idea and discuss certain architectural decisions and problems. 
 The concept and implementation have been prepared by 	Yael Bar-Zeev, Thomas Derleth, Jörg Einfeldt, Merle Hiort and Calieston Varatharajah.
