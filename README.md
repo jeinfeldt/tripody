@@ -17,4 +17,4 @@ In order to run the application you need to:
 6. Provide Yelp API access information in credentials.rb  
 
 The project has been created in order to demonstrate the idea and discuss certain architectural decisions and problems. 
-Concept and the implementation have been prepared by 	Yael Bar-Zeev, Thomas Derleth, Jörg Einfeldt, Merle Hiort and Calieston Varatharajah.
+The concept and implementation have been prepared by 	Yael Bar-Zeev, Thomas Derleth, Jörg Einfeldt, Merle Hiort and Calieston Varatharajah.
