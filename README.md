@@ -1,6 +1,6 @@
 # Tripody
 
-Tripody is a small prototype project which has been developed in the context of the module Web Application Architecture in the wintersemester of 2016 at Stuttgart Media University. The module was offered by the graduate program Computer Science and Media. 
+Tripody is a small prototype project which has been developed in the context of the module Web Application Architecture in the wintersemester of 2016 at Stuttgart Media University. The module was offered by the graduate program Computer Science and Media. Here is the demo page http://tripody.mi.hdm-stuttgart.de/
 
 The goal of the module was to provide an insight to common approaches and best practices for developing web applications with focus on the technology and architecture. Students had to evaluate advantages and disadvantages regarding certain architectures and present them in presentations and a written assignment. 
 
