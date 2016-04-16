@@ -10,6 +10,7 @@ The project group Tripody decided to create a web application, which provides th
 - Data: Yelp API
 - Data storage: Redis 
 - Business logic: Ruby Web Framework Sinatra.
+
 ## Installation
 In order to run the application you need to:  
 1. Clone the repository  
